@@ -1,0 +1,17 @@
+install/update a npm package:
+    npm i package-name
+
+uninstall a npm package:
+    npm uninstall package-name
+
+get list of installed packages:
+    local:     npm list
+    global:    npm list -g
+
+view package version:
+    npm view package-name version
+
+use globally installed package:
+    in package.json:
+        in dependencies:
+            "package-name": "^version"
