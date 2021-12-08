@@ -22,7 +22,7 @@ app.get('/api/courses', (req, res) => {
 app.post('/api/courses', (req, res) => {
     const course = {
         id: courses.length + 1,
-        name: req.body.name
+        name: req.body.name  // this input needs validation. Never trust what the client sends you.
     } 
     courses.push(course) //array.push appends new elements in array
 
