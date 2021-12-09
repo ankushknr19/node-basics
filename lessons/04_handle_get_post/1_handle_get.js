@@ -20,7 +20,7 @@ app.get('/api/courses/:id', (req, res) => {
     const course = courses.find(c => c.id === parseInt(req.params.id))
     //req.params.id returns string so parse to int
 
-    if(!course) res.status(404).send('course with given id not found ')
+    if(!course) return res.status(404).send('course with given id not found ')
 
     res.send(course)
 })
